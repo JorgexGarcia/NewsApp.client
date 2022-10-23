@@ -1,0 +1,23 @@
+<ng-template #loadingComponent>
+  <app-loading></app-loading>
+</ng-template>
+
+<section class="resume" *ngIf="!loading; else loadingComponent">
+  <div class="resume-section-content">
+    <h2 class="mb-5">Archived</h2>
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5"
+         *ngFor="let item of newsList">
+      <div class="flex-grow-1">
+        <h3 class="mb-0">{{item.title}}</h3>
+        <div class="subheading mb-1">{{item.description}}</div>
+        <div class="subheading mb-3"><small>{{item.author}}</small></div>
+        <p>{{item.content}}</p>
+      </div>
+      <div class="resume-colum-right">
+        <span class="text-secondary ">{{item.archiveDate | customDatePipe : 'date'}}</span>
+        <span class="text-secondary mb-5">{{item.archiveDate | customDatePipe : 'time'}}</span>
+        <button class="buttonNew" (click)="deleteNews(item.id!)">Delete</button>
+      </div>
+    </div>
+  </div>
+</section>

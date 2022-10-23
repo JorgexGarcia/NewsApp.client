@@ -1,0 +1,29 @@
+
+#sideNav {
+  padding: 1rem;
+  background-color: #4572EB;
+}
+
+@media (min-width: 992px) {
+  #sideNav {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    height: 100vh;
+  }
+  .navbar-nav{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-nav{
+    padding-top: 1rem;
+  }
+}

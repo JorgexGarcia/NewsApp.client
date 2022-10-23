@@ -1,0 +1,21 @@
+
+h2{
+  color: #57BCA7;
+}
+
+.buttonNew{
+  height: 2rem;
+  width: 8rem;
+  border-radius: 25px;
+  border: 1px solid white;
+  background-color:#57BCA7;
+  color: white;
+}
+
+.resume-colum-right{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}

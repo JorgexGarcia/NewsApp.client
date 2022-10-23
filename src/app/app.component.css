@@ -1,0 +1,12 @@
+
+@media (min-width: 992px) {
+  #contentPage {
+    padding: 2rem 2rem 2rem 12rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #contentPage {
+    padding: 2rem;
+  }
+}

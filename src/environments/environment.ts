@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  base_url: 'http://localhost:3001/api/news',
+
+  timeZone: 'Europe/Madrid',
+  defaultDateTimeFormat: 'dd/MM/yyyy HH:mm:ss',
+  defaultDateFormat: 'dd/MM/yyyy',
+  defaultTimeFormat: 'HH:mm:ss',
+  defaultShortTimeFormat: 'HH:mm',
 };
 
 /*
