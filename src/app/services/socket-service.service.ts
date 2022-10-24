@@ -13,17 +13,12 @@ export class SocketServiceService {
   constructor(private socket: Socket) {}
 
   emitNews(type: boolean, updateNews: string | null, deleteNews: string | null): void {
-    var data = {
+    const data = {
       type: type,
       updateNews: updateNews,
       deleteNews: deleteNews
-    }
-
+    };
     this.socket.emit('event', data);
-  }
-
-  emitExit(): void {
-    this.socket.emit('exit');
   }
 
   getNews() {
