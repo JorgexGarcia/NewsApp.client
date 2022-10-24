@@ -9,6 +9,10 @@ import { AppRoutingModule } from './app-routing.module';
 import {HttpClientModule} from "@angular/common/http";
 import {PipeModule} from "./pipes/pipe.module";
 
+import {SocketIoConfig, SocketIoModule} from "ngx-socket-io";
+
+const config: SocketIoConfig = { url: 'http://localhost:3001', options: {} };
+
 @NgModule({
   declarations: [
     AppComponent
@@ -20,7 +24,8 @@ import {PipeModule} from "./pipes/pipe.module";
     PagesModule,
     RouterModule,
     AppRoutingModule,
-    PipeModule
+    PipeModule,
+    SocketIoModule.forRoot(config)
   ],
   providers: [],
   bootstrap: [AppComponent]

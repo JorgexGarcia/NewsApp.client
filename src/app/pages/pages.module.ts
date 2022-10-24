@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import {NewComponent} from "./new/new.component";
 import { ArchivedComponent } from './archived/archived.component';
 import {PipeModule} from "../pipes/pipe.module";
-import {NgxSkeletonLoaderModule} from "ngx-skeleton-loader";
 import {SharedModule} from "../shared/shared.module";
 
 
@@ -16,8 +15,7 @@ import {SharedModule} from "../shared/shared.module";
   imports: [
     CommonModule,
     PipeModule,
-    NgxSkeletonLoaderModule.forRoot({animation: 'pulse', loadingText: 'Cargando...'}),
-    SharedModule,
+    SharedModule
   ],
   exports: [
     NewComponent
